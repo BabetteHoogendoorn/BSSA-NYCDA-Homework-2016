@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<script>
+
+/* autoscale: true
+slidenumbers: true
+
+# [fit] Challenge: <br>Compound interest calculator function
+
+---
+
+# The magic or compound interest
+
+10% growth a year
+
+Brother 1: starts at 20 years old, saves $4000 a year for 20 years, leaves it for 25 years
+Total of $80,000 savings
+
+Brother 2 starts at 40 years old, saves $4000 a year for 25 years, leaves it until age 65
+Total savings of $100,000
+
+---
+
+# Total savings
+
+- Brother 1: $2,500,000
+- Brother 2: $400,000
+
+
+---
+
+# Do the following
+
+- Make two objects. Properties: name, bankBalance, monthlySavings, interestRate, yearsSaving
+- Make a function that takes an object as a parameter
+- Make this function calculate compound interest based on bankBalance, monthlySavings, interestRate, yearsSaving
+- Make the function console.log "Client <name> saved <amount> after <years>" */
+
+
+var bankBro1 = {
+  name: 'bro1',
+  bankBalance: 80000,
+  yearlySavings: 4000,
+  interestRate: 0.1,
+  yearsSaving: 20
+}
+
+var bankBro2 = {
+  name: 'bro2',
+  bankBalance: 100000,
+  yearlySavings: 4000,
+  interestRate: 0.1,
+  yearsSaving: 25
+}
+//function that takes an object as a parameter
+
+function money (brother){
+  for  ( var i = 0; i < brother.yearsSaving; i++ ) {
+       brother.bankBalance += brother.yearlySavings  //+1
+       brother.bankBalance *= ( brother.interestRate + 1 ) //* 1 (want interest rate is 1,1)
+  }
+  console.log( "Client " + brother.name +  " saved " + brother.bankBalance + " after " + brother.yearsSaving + " years")
+}
+
+
+money(bankBro1)
+
+money(bankBro2)
+
+// hoe afronden? opzoeken.
+</script>
