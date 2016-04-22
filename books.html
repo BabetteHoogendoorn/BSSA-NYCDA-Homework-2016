@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<script>
+
+/* Create an object that represents a book:
+
+Part 1
+Give it a “title" property with a value that is the title of your book.
+Give it a “body” property which has an array of strings as the value.
+There should be at least three strings within the array. This array represents the pages of text within your book.
+
+Part 2
+Create another object with the same format, but different title and different body.
+
+Part 3
+Now, create a function that “reads” the book by first printing out the title,
+then printing out each element (page) in the body.
+*/
+
+var reading = {
+  title: "A Good Book",
+  body: ["Once upon a time", "The evil aunt", "Sleep well"]
+
+}
+
+var cave = {
+  title: "The Bear",
+  body: ["Nice to meet you", "The story of the bear", "Happy ending"]
+}
+
+function readBook (titles){
+  console.log("Title: " + titles.title)
+  for ( var i = 0; i < titles.body.length; i++) {
+    console.log( "Page " + (i + 1) + ":" + " " + titles.body[i])
+  }
+}
+
+readBook(reading)
+
+readBook(cave)
+
+/* console.log("Title: "+ reading.title)
+  console.log("Page 1: "+ reading.body[0])
+  console.log("Page 2: "+ reading.body[1])
+  console.log("Page 3: "+ reading.body[2])
+}
+readBook()
+
+function whatsInit () {
+  console.log("Title: "+ cave.title)
+  console.log("Page 1: "+ cave.body[0])
+  console.log("Page 2: "+ cave.body[1])
+  console.log("Page 3: "+ cave.body[2])
+}
+whatsInit () */
+
+</script>
+</html>
